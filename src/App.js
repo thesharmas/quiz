@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import QuestionCard from './QuestionCard';
+import Stop from './Stop';
 function App() {
+  let title="Emergency Fund";
+  let text="Do you have an emergency fund setup?"
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <QuestionCard questionTitle={title} questionText={text}/>
+     
+      <Stop title={title}/>
     </div>
   );
 }
